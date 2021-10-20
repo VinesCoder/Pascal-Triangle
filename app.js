@@ -1,21 +1,16 @@
 //Geting DOM elements
-const input = document.getElementById('input').value,
-      btn = document.querySelector('#btn'),
-      result = document.querySelector('#result');
+// const inputValue = document.getElementById('input').value;
+const input = document.querySelector('#input');
+const btn = document.querySelector('#btn');
+const result = document.querySelector('#result');
 
 let outputElement = 0;
 
-/*
-  let arr = input - не працює!
-  не знаю як передати вхідні дані в функцію
-
-  let arr = [1,5,10] -так все працює
-*/
-
 //////////////////////
 btn.addEventListener('click',() =>{
-        getNextElementInRow(arr);
-        result.innerHTML = outputElement;
+  let arr = JSON.parse(input.value);
+  getNextElementInRow(arr);
+  result.innerHTML = outputElement;
 })
 
 /////////////////////
@@ -41,5 +36,6 @@ function getNextElementInRow(arr){
     outputElement = row[arr.length];
     return outputElement;
   }
+
 }
 
