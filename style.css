@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color:rgb(222, 222, 222);
+}
+
+.container{
+  width: 300px;
+  margin-top: -15vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+input,button{
+  margin-bottom: 1rem;
+}
+input{
+  padding: 5px;
+  font-size: 20px;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  align-self: center;
+  text-transform: capitalize;
+  background-color: green;
+  color: #fff;
+  border-radius: 3px;
+  border:none;
+  cursor: pointer;
+}
+button:hover{
+  opacity: .8;
+}
+
+p{
+  font-size: 24px;
+  font-weight: bold;
+}
